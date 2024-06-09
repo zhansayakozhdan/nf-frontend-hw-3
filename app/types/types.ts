@@ -10,3 +10,15 @@ export interface IPost {
         views: number
         userId: number
 }
+
+export interface IUser {
+    id: number, 
+    username: string,
+    email: string,
+    firstName: string,
+    lastName: string,
+    gender: string,
+    image: string,
+    token: string,
+    refreshToken: string
+}

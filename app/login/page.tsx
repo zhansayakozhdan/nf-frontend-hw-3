@@ -8,7 +8,7 @@ const LoginPage: React.FC = () => {
   const [password, setPassword] = useState('');
   const [error, setError] = useState<string | null>(null);
 
-  const handleSubmit = async (event: React.FormEvent) => {
+  const handleLogin = async (event: React.FormEvent) => {
     event.preventDefault();
     try {
       setError(null);
@@ -21,7 +21,7 @@ const LoginPage: React.FC = () => {
   return (
     <div className='h-screen mx-auto p-24'>
       <div className='mx-auto max-w-xl py-6 px-8 h-80 mt-20 bg-white rounded shadow-xl'>
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleLogin}>
         <h1 className='flex justify-center text-2xl font-bold text-gray-800 mb-4'>Login</h1>
           <div className='mb-6'>
             <label htmlFor="username" className='block text-gray-800 font-bold'>Username:</label>
