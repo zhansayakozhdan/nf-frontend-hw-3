@@ -41,7 +41,7 @@ const Post = () => {
       <div className="mb-4 md:mb-0 w-full mx-auto relative">
         <div className="px-4 lg:px-0">
           <h2 className="text-5xl font-semibold text-gray-800 leading-tight mb-2">
-            "{post.title}"
+          &quot;{post.title}&quot;
           </h2>
         </div>
 
